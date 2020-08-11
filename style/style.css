@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+
+nav{
+    font-size: 1.2rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.navbar{
+    background-color: rgb(190, 190, 190) !important;
+}
+
+.nav-item{
+    font-weight: 600;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.carousel{
+    
+}
+
+#carouselView .carousel-inner{
+    border-radius: 25px;
+    box-shadow: 4px 4px 20px rgba(0,0,0,.164);
+    border: 4px solid rgb(24, 23, 38);
+}
+
+#carouselView img{
+    width: 100%;
+}
+
+.booking-home{
+    background:rgb(190, 190, 190);
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,.164);
+    padding-bottom: 30px;
+}
+
+.custom-input input{
+    border-radius: 10px;
+}
+
+.games img{
+    width: 80%;
+    border-radius: 10px;
+    border: 4px solid rgb(89, 87, 228);
+}
+
+
+
+#carouselFood1 .carousel-inner,
+#carouselFood2 .carousel-inner
+
+{
+    border-radius: 20px;
+    border: 2px solid rgb(89, 87, 228);
+}
+
+
+.member img, .member .insideImg{
+    border-radius: 15px;
+    border: 4px solid rgb(179, 125, 68);
+    box-shadow: 0 2px 30px rgba(0,0,0,.164);
+}
+
+.member .insideImg{
+	width: 90%;
+	height: 100%;
+	background-color: rgb(187, 186, 186);
+	position: absolute;
+	opacity: 0;
+	top: 0px;
+	left: 0px;
+	transition: 0.4s;
+}
+.member .insideImg img{
+	font-size: 75px;
+	color: white;
+}
+
+.member:hover img{
+    filter: blur(4px);
+    opacity: 0.5;
+}
+
+.member:hover .insideImg{
+	opacity: 1;
+	top: -27px;
+	left: 40px;
+    transition: 0.6s;
+}
+
+.icon .fab{
+    margin: 0 10px;
+}
+
+.icon .fa-facebook-square{
+    color: rgb(59, 89, 152);
+}
+
+.icon .fa-instagram {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon .fa-facebook-messenger{
+    color: rgb(0,120,255);
+}
+
+.icon .fa-twitter{
+    color: rgb(29,161,242);
+}
+
+
+/* Media query */
+
+@media (max-width: 1200px) {
+    body {
+        background-color:green;
+      }
+    .caption {
+        position: absolute;
+        bottom: 5%;
+        right: 2%;
+    }
+    .caption h3{
+        padding: 1.3rem 1.5rem;
+        border-radius: 0.7rem;
+        margin: 0 0.3rem;
+        font-size: 130%;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        background-color: blue;
+    }
+    .member{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        background-color: olive;
+    }
+    .foods h2{
+        font-size: 150%;
+    }  
+    .member{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+}
