@@ -64,11 +64,6 @@ nav{
     border: 2px solid rgb(89, 87, 228);
 }
 
-#carouselFood1 img,
-#carouselFood2 img
-{
-    width: 100%;
-}
 
 .member img, .member .insideImg{
     border-radius: 15px;
@@ -153,11 +148,23 @@ nav{
     .member{
         margin-bottom: 15px;
     }
+
+    #carouselFood1 img,
+    #carouselFood2 img
+    {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
     body {
         background-color: red;
+    }
+
+    #carouselFood1 img,
+    #carouselFood2 img
+    {
+        width: 100%;
     }
 }
 
@@ -171,5 +178,10 @@ nav{
     .member{
         width: 80%;
         margin-bottom: 15px;
+    }
+    #carouselFood1 img,
+    #carouselFood2 img
+    {
+        width: 100%;
     }
 }
