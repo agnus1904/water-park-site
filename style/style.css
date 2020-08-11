@@ -27,9 +27,6 @@ nav{
     box-shadow: none;
 }
 
-.carousel{
-    
-}
 
 #carouselView .carousel-inner{
     border-radius: 25px;
@@ -62,12 +59,16 @@ nav{
 
 #carouselFood1 .carousel-inner,
 #carouselFood2 .carousel-inner
-
 {
     border-radius: 20px;
     border: 2px solid rgb(89, 87, 228);
 }
 
+#carouselFood1 img,
+#carouselFood2 img
+{
+    width: 100%;
+}
 
 .member img, .member .insideImg{
     border-radius: 15px;
