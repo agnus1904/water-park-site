@@ -1,11 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: #bcd8d2;
-    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    color: #f2f0f0;
+    background-image: linear-gradient(to right top, #648ecd, #618bcd, #5e89ce, #5b86ce, #5883ce, #498ad2, #3890d5, #2296d7, #00a6d7, #17b4d3, #42c0cd, #67ccc6);
 }
 
+
+.nav-out-top{
+    background-color: #11d0de;
+    transition: 0.5s;
+}
+
+.to-top{
+    background: #3399d3;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    box-shadow: 0 2px 5px rgba(74, 73, 73, 0.749);
+    z-index: 1000;
+}
+.to-top:hover{
+    color: white;
+    box-shadow: 0 2px 10px rgba(57, 56, 56, 0.749);
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
 
 nav{
     font-size: 1.2rem;
@@ -16,17 +58,20 @@ nav{
     width: 100%;
 }
 
+.navbar{
+    box-shadow: 4px 4px 20px rgba(0,0,0,.164);
+    transition: 0.5s;
+}
+
+
 .navbar i{
-    background-image: linear-gradient(to right top, #f891f7, #da8ff5, #bb8df1, #9c8ae9, #7d86df, #618de0, #4293de, #1d97d8, #00a7d9, #00b5d5, #37c1ce, #5ecdc7);
+    background-color: white;
+    /* background-image: linear-gradient(to right top, #f891f7, #da8ff5, #bb8df1, #9c8ae9, #7d86df, #618de0, #4293de, #1d97d8, #00a7d9, #00b5d5, #37c1ce, #5ecdc7); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .nav-item{
     font-weight: 500;
-}
-
-.nav-item a:hover{
-    text-decoration: underline;
 }
 
 .navbar-toggler:focus,
@@ -36,6 +81,13 @@ nav{
     box-shadow: none;
 }
 
+
+.parkname h1{
+    font-family: 'Sriracha', cursive;
+    font-size: 600%;
+    text-shadow: 4px 4px 20px rgba(0,0,0,.164);
+    color: #DAF3FF;
+}
 
 #carouselView .carousel-inner{
     border-radius: 25px;
@@ -49,7 +101,7 @@ nav{
 
 .booking-home{
     border-radius: 20px;
-    box-shadow: 0px 5px 30px rgba(0,0,0,.164);
+    box-shadow: 0px 5px 30px rgba(0,0,0,.264);
     padding-bottom: 30px;
     color: rgb(255, 255, 255);
 }
@@ -58,6 +110,15 @@ nav{
 .booking-home select,
 .booking-home button{
     box-shadow: 0px 5px 30px rgba(0,0,0,.164);
+}
+
+.ticket-price{
+    border-radius: 20px;
+    box-shadow: 0px 5px 30px rgba(0,0,0,.164);
+    background-image: linear-gradient(to left bottom, #4d8be7, #4f93e7, #549be7, #5ca2e5, #65a9e4);background-size: cover;
+}
+.ticket-price-form{
+    padding-top: 30px;
 }
 
 .custom-input input{
@@ -69,11 +130,17 @@ nav{
     height: 20rem;
     border-radius: 10px;
     box-shadow: 0px 5px 30px rgba(0,0,0,.164);
+    transition: all 0.3s;
 }
- 
+
+.games img:hover{
+    box-shadow: 0px 5px 30px rgba(0,0,0,.664);
+    transition: all 0.3s;
+}
+
 .games h2{
     font-size: 250%;
-    color: blanchedalmond;
+    color: rgb(235, 234, 232);
 }
 
 
@@ -91,7 +158,18 @@ nav{
     height: 100%;
     border-radius: 18px;
 }
+#carouselFood1,
+#carouselFood2{
+    transition: all 0.3s;
+}
 
+
+#carouselFood1:hover,
+#carouselFood2:hover{
+    border-radius: 20px;
+    box-shadow: 0px 5px 30px rgba(0,0,0,.664);
+    transition: all 0.3s;
+}
 
 .member img, .member .insideImg{
     border-radius: 15px;
@@ -101,28 +179,33 @@ nav{
 .member .insideImg{
 	width: 90%;
 	height: 100%;
-	background-color: #3A6896;
+	background-color: #4784c1;
 	position: absolute;
 	opacity: 0;
 	top: 0px;
     left: 0px;
-    border: 2px solid #009EF9;
-    transition: 0.4s;
+    border: 2px solid #2aa3e9;
+    transition: 0.7s;
+    text-shadow: 0 1px 3px rgb(36, 27, 162);
+    box-shadow: 5px 5px 30px rgba(0,0,0,.864);
 }
 .member:hover img{
     filter: blur(4px);
     opacity: 0.5;
 }
 
+
+
 .member:hover .insideImg{
 	opacity: 1;
 	top: -27px;
 	left: 40px;
-    transition: 0.6s;
+    transition: .4s;
 }
 
 .icon .fab{
     margin: 0 10px;
+    transition: all 0.3s;
 }
 
 .icon .fa-facebook-square{
@@ -144,6 +227,12 @@ nav{
     color: rgb(29,161,242);
 }
 
+.icon .fa-facebook-square:hover,
+.icon .fa-instagram:hover,
+.icon .fa-facebook-messenger:hover,
+.icon .fa-twitter:hover{
+    transform: scale(1.8);
+}
 
 /* Media query */
 
@@ -176,7 +265,9 @@ nav{
     .games img{
         height: 22rem;
     }
-
+    .games img:hover{
+        transform: scale(1);
+    }
 }
 
 @media (max-width: 768px) {
@@ -187,9 +278,15 @@ nav{
     #carouselFood2 .carousel-inner{
         height: 20rem;
     }
+    iframe{
+        height: 15rem;
+    }
 }
 
 @media (max-width: 576px) {
+    .parkname h1{
+        font-size: 350%;
+    }
     .foods h2{
         font-size: 150%;
     }  
@@ -198,11 +295,44 @@ nav{
         margin-bottom: 15px;
     }
     .games img{
-        height: 18rem;
+        height: 19rem;
     }
     #carouselFood1 .carousel-inner,
     #carouselFood2 .carousel-inner{
-    height: 18rem;
-}
+        height: 17rem;
+    }
+
+    .booking-home,
+    .booking-home input,
+    .booking-home select,
+    #checkprice{
+        font-size: 100%;
+    }
+    iframe{
+        height: 17rem;
+    }
     
+}
+
+@media (max-width: 320px){
+    .games img{
+        height: 12rem;
+    }
+    .parkname h1{
+        font-size: 300%;
+    }
+    #carouselFood1 .carousel-inner,
+    #carouselFood2 .carousel-inner{
+        height: 10rem;
+    }
+
+    .booking-home,
+    .booking-home input,
+    .booking-home select,
+    #checkprice{
+        font-size: 80%;
+    }
+    iframe{
+        height: 10rem;
+    }
 }

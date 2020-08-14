@@ -7,65 +7,71 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
-    
 </head>
-<body >
+<body>
+    <div id="menuTop"></div>
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+
     <!-- Navbar row-->
-    <section class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="pl-4" href="index.html"><i class="fas fa-swimmer fa-3x"></i></a>
+    <section class="container-fluid fixed-top">
+        <nav class="navbar navbar-expand-xl navbar-light nav-out-top">
+            <a class="pl-4" href="#menuTop"><i class="fas fa-swimmer fa-3x"></i></a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" 
                 data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse text-right " id="navbarResponsive">
-                <ul class="navbar-nav d-flex justify-content-around">
+            <div class="collapse navbar-collapse text-right" id="navbarResponsive">
+                <ul class="navbar-nav pl-4">
                     <li class="nav-item">
-                        <a href="introduction.html" class="nav-link">Introduction</a>
+                        <a href="#menuTop" class="nav-link">Introduction</a>
                     </li>
                     <li class="nav-item">
-                        <a href="plan.html" class="nav-link">Plans your visit</a>
+                        <a href="#booking" class="nav-link">Booking ticket</a>
                     </li>
                     <li class="nav-item">
-                        <a href="guide.html" class="nav-link">Guide maps</a>
+                        <a href="#foodrow" class="nav-link">Plans your visit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#games" class="nav-link">Games</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-flex flex-column-reverse flex-xl-row-reverse">
+                    <li class="nav-item">
+                        <a href="#aboutUs" class="nav-link">About us</a>
                     </li>
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="booking.html" class="nav-link">Booking sticket</a>
+                        <a href="guide.html" class="nav-link">Guide maps</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="aboutus.html" class="nav-link">About us</a>
-                    </li> 
                 </ul>
             </div>
         </nav>
     </section>
     <br>
+    <div class="container-fluid" style="height: 100px;">
 
-    <!-- Login row -->
-    <div class="container-fluid">
+    </div>
+
+    <br>
+
+    <!--Water park name row-->
+    <div class="container parkname">
         <div class="row">
-            <div class="offset-4 col-8 d-flex offset-sm-5 col-sm-7 offset-lg-8 col-lg-4">
-                <h3 style="color: #3D4756;font-weight: 400;">Login</h3> &nbsp;
-                <input class="form-control" type="text" name="username" 
-                id="username" size="25" placeholder="Username"> &nbsp;
-
-                <input class="form-control" type="text" name="password" 
-                id="password" size="25" placeholder="Password">
-            </div>
-            <div class="offset-8 col-3 d-flex flex-row-reverse">
-                <button class="btn btn-primary" type="submit">Login</button>
-                <a href="#" style="margin-right: 20px;padding-top: 5px;">Register</a>
+            <div class="col-12 text-center">
+                <h1>Sanjalika Water Park</h1>
             </div>
         </div>
     </div>
+    <br>
 
     
     <div class="container mt-4">
-
-        <!-- Carousel views row -->
+        
         <div class="row">
             <div id="carouselView" class="col-sm-12 carousel slide " data-ride>
                 <ul class="carousel-indicators">
@@ -77,19 +83,19 @@
                 </ul>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://afamilycdn.com/2019/6/11/cvn-thanh-ha-23-15601910865511600994682-1560194040118136473663.png">
+                        <img src="./images/view1.png" alt="image error">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://afamilycdn.com/2019/6/11/cvn-thanh-ha-23-15601910865511600994682-1560194040118136473663.png">
+                        <img src="./images/view1.png" alt="image error">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://afamilycdn.com/2019/6/11/cvn-thanh-ha-23-15601910865511600994682-1560194040118136473663.png">
+                        <img src="./images/view1.png" alt="image error">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://afamilycdn.com/2019/6/11/cvn-thanh-ha-23-15601910865511600994682-1560194040118136473663.png">
+                        <img src="./images/view1.png" alt="image error">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://afamilycdn.com/2019/6/11/cvn-thanh-ha-23-15601910865511600994682-1560194040118136473663.png">
+                        <img src="./images/view1.png" alt="image error">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselView" role="button" data-slide="prev">
@@ -102,25 +108,29 @@
                 </a>
             </div>
         </div>
-
+        <br  id="booking" >
+        <br>
+        <br>
+        <h1 class="text-center" style="font-size: 450%; user-select: none;">
+            Booking Ticket</h1>
         <!-- booking row -->
         <div class="row mt-4 pt-4 booking-home">
             <div class="offset-0 col-6 col-lg-3 offset-lg-1 pl-4 pl-lg-0">
                 <div class="custom-input">
-                    <label for="start">Select date:</label>
+                    <label for="start">Select date</label>
                     <input class="form-control" type="date" id="start" name="trip-start"
                         value="2020-08-12"
                         min="2020-08-12" max="2030-12-31">
                 </div>
             </div>
-            <div class="col-6 col-lg-2 d-flex pl-4 pl-lg-0">
-                <div class="mr-4" style="width:100px;">
-                    <label for="adultsNum">Aduilts</label>
-                    <input type="number" id="adultsNum" min="1" value="1" class="form-control">
+            <div class="offset-1 col-5 offset-lg-0  col-lg-2 d-flex pl-2 pl-lg-0 booknum">
+                <div class="mr-2 mr-sm-4" style="width:100px;">
+                    <label for="adultNum">Aduilts</label>
+                    <input type="number" id="adultNum" min="1" value="1" class="form-control">
                 </div>
                 <div style="width:100px;">
-                    <label for="childrenNum">Children</label>
-                    <input type="number" id="childrenNum" min="0" value="0" class="form-control">
+                    <label for="childNum">Children</label>
+                    <input type="number" id="childNum" min="0" value="0" class="form-control">
                 </div>
             </div>
             <div class="col-6 col-lg-3 mt-2 mt-lg-0 pl-4 pl-lg-0">
@@ -133,15 +143,91 @@
                         <option value="hotel4">Hotel 4 3 stars</option>
                     </select>
             </div>
-            <div class="offset-1 offset-lg-0 col-4 col-sm-4 col-md-3 col-lg-2 mt-2 mt-lg-0 pl-4 pl-lg-0">
+            <div class="offset-1 offset-sm-1 offset-lg-0 col-5 col-sm-4 col-md-3 col-lg-2 mt-2 mt-lg-0">
                 <label for="checkprice">Take a look</label>
-                <button class="btn btn-primary" type="submit">Check price</button>
+                <button class="btn btn-primary" id="checkprice" type="submit">Check price</button>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!-- Price ticket-->
+        <div class="row text-center ticket-price">
+
+            <div class="col-12 col-lg-6 ticket-price-form" 
+            style="height: 550px;border-radius:20px 0 0 0;">
+                <h1>Default ticket</h1>
+                <br>
+                <div style="border-radius: 20px;height: 30%; width: 60%;margin: 0 auto;
+                box-shadow: 0px 5px 30px rgba(0,0,0,.164);padding-top: 25px;">
+                    <h3>Aduilt prices: 5$</h3>
+                    <br>
+                    <h3>Child prices: 3$</h3>
+                </div>
+                <br>
+                <h3><i class="fas fa-check"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-times"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-times"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-times"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-times"></i>&nbsp;asbdsc</h3>
+            </div>
+            <div class="col-12 col-lg-6 ticket-price-form" 
+            style="height: 550px;border-radius:0 20px 0 0;">
+                <h1>Silver ticket</h1>
+                <br>
+                <div style="border-radius: 20px;height: 30%; width: 60%;margin: 0 auto;
+                box-shadow: 0px 5px 30px rgba(0,0,0,.164);padding-top: 25px;">
+                    <h3>Aduilt prices: 7$</h3>
+                    <br>
+                    <h3>Child prices: 4$</h3>
+                </div>
+                <br>
+                <h3><i class="fas fa-check"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-check"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-times"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-times"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-times"></i>&nbsp;asbdsc</h3>
+            </div>
+            <div class="col-12 col-lg-6 ticket-price-form" 
+            style="height: 550px;border-radius:0 0 0 20px;">
+                <h1>Gold ticket</h1>
+                <br>
+                <div style="border-radius: 20px;height: 30%; width: 60%;margin: 0 auto;
+                box-shadow: 0px 5px 30px rgba(0,0,0,.164);padding-top: 25px;">
+                    <h3>Aduilt prices: 10$</h3>
+                    <br>
+                    <h3>Child prices: 6$</h3>
+                </div>
+                <br>
+                <h3><i class="fas fa-check"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-check"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-check"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-check"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-times"></i>&nbsp;asbdsc</h3>
+            </div>
+            <div class="col-12 col-lg-6 ticket-price-form" 
+            style="height: 550px;border-radius:0 0 20px 0;">
+                <h1>Full combo</h1>
+                <br>
+                <div style="border-radius: 20px;height: 30%; width: 60%;margin: 0 auto;
+                box-shadow: 0px 5px 30px rgba(0,0,0,.164);padding-top: 25px;">
+                    <h3>Aduilt prices: 15$</h3>
+                    <br>
+                    <h3>Child prices: 9$</h3>
+                </div>
+                <br>
+                <h3><i class="fas fa-check"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-check"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-check"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-check"></i>&nbsp;asbdsc</h3>
+                <h3><i class="fas fa-check"></i>&nbsp;asbdsc</h3>
             </div>
         </div>
     </div>
+
+    <br id="games">
     <br>
-
-
+    <br>
 
     <!-- Game Row -->
     <h1 style="text-align: center;font-size: 450%; user-select: none;">
@@ -149,40 +235,48 @@
     <div class="container mt-4">
         <div class="row">
             <div class="games col-sm-12 col-lg-6 mb-4 d-flex flex-column align-items-center">
-                <img class="img-thumbnail" 
-                src="https://c.pxhere.com/photos/f1/96/swimming_pool_drops_of_water_black_hair_swim_water_jet-712390.jpg!d">
+                <img class="img-thumbnail imgs1" 
+                src="./images/game1.jpg!d" alt="image error">
                 <br>
                 <a href="#" class="text-light"><h2>Swimming</h2></a>
             </div>
             <div class="games col-sm-12 col-lg-6 mb-4 d-flex flex-column align-items-center">
-                <img class="img-thumbnail" 
-                src="https://cdn3.ivivu.com/2018/07/4-tro-choi-mao-hiem-cuc-thu-vi-ma-khong-can-ra-nuoc-ngoai-ngay-o-viet-nam-cung-co-the-choi-duoc-ivivu-2.jpg">
+                <img class="img-thumbnail imgs2" 
+                src="./images/game2.jpg" alt="image error">
                 <br>
                 <a href="#" class="text-light"><h2>Adventure game</h2></a>
             </div>
             <div class="games col-sm-12 col-lg-6 mb-4 d-flex flex-column align-items-center">
-                <img class="img-thumbnail" 
-                src="https://tiniworld.com/wp-content/uploads/2016/12/khu_vui_choi_tre_em_tiNiWorld_hinh_1.jpg">
+                <img class="img-thumbnail imgs3" 
+                src="./images/game3.jpg" alt="image error">
                 <br>
                 <a href="#" class="text-light"><h2>Children's play area</h2></a>
             </div>
             <div class="games col-sm-12 col-lg-6 mb-4 d-flex flex-column align-items-center">
-                <img class="img-thumbnail" 
-                src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/t9iwmoh3cnknzs6fwxhd/V%C3%A9Th%E1%BB%A7yCungCoexAquarium%E1%BB%9FSeoul.webp">
+                <img class="img-thumbnail imgs4" 
+                src="./images/game4.webp" alt="image error">
                 <br>
                 <a href="#" class="text-light"><h2>Aquarium</h2></a>
             </div>
         </div>
     </div>
     
-    <hr class="mt-4" style="border: 1px solid #bcd8d2;width: 40%;">
+
+    <br>
+    <br>
+    <hr class="mt-4" style="border: 3px solid #bcd8d2;width: 35%;">
+    <br>
+    <br>
+    <br>
 
     <!-- Foods row -->
-    <h1 style="text-align:center; font-size: 450%;color: #bcd8d2; user-select: none;">
+    <h1 style="text-align:center; font-size: 550%;color: #e2e6e5; user-select: none;">
         Foods</h1>
-    <div class="container mt-4 mb-4">
+    <br>
+
+    <div id="foodrow" class="container mb-4">
         <div class="row foods">
-            <div class="">
+            <div class="col-12">
                 <div class="container">
                     <div class="row d-flex flex-column-reverse flex-lg-row">
                         <div class="col-12 col-lg-8">
@@ -196,19 +290,19 @@
                                 </ul>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img class="img-thumbnail" src="https://blog.traveloka.com/vn/wp-content/uploads/sites/9/2017/08/10-nha-hang-mon-au-o-sai-gon-1a.jpg">
+                                        <img class="img-thumbnail" src="./images/food1.1.jpg" alt="image error">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="img-thumbnail" src="https://blog.traveloka.com/vn/wp-content/uploads/sites/9/2017/08/10-nha-hang-mon-au-o-sai-gon-2.png">
+                                        <img class="img-thumbnail" src="./images/food1.2.png" alt="image error">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="img-thumbnail" src="https://blog.traveloka.com/vn/wp-content/uploads/sites/9/2017/08/10-nha-hang-mon-au-o-sai-gon-4.jpg">
+                                        <img class="img-thumbnail" src="./images/food1.3.jpg" alt="image error">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="img-thumbnail" src="https://blog.traveloka.com/vn/wp-content/uploads/sites/9/2017/08/10-nha-hang-mon-au-o-sai-gon-5.jpg">
+                                        <img class="img-thumbnail" src="./images/food1.4.jpg" alt="image error">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="img-thumbnail" src="https://blog.traveloka.com/vn/wp-content/uploads/sites/9/2017/08/10-nha-hang-mon-au-o-sai-gon-6.jpg">
+                                        <img class="img-thumbnail" src="./images/food1.5.jpg" alt="image error">
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselFood1" role="button" data-slide="prev">
@@ -227,10 +321,12 @@
                             </div>
                         </div>
                     </div> <!-- row indise-->
-                </div> <!-- container-inside -->
+                </div> <!-- container-inside 1 -->
             </div>
-            <div class="">
-                <div class="container mt-3">
+            <div class="col-12">
+                <br>
+                <br>
+                <div class="container">
                     <div class="row d-flex flex-column flex-lg-row">
                         <div class="col-12 col-lg-4">
                             <div class="mt-lg-4 text-center">
@@ -247,16 +343,16 @@
                                 </ul>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img class="img-thumbnail" src="http://kinhtevadubao.vn/ckfinder/userfiles/images/food-1(3).jpg">
+                                        <img class="img-thumbnail" src="./images/food2.1.jpg" alt="image error">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="img-thumbnail" src="https://cdn.cet.edu.vn/wp-content/uploads/2018/12/kinh-doanh-thuc-an-nhanh.jpg">
+                                        <img class="img-thumbnail" src="./images/food2.2.jpg" alt="image error">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="img-thumbnail" src="https://www.kiotviet.vn/wp-content/uploads/2019/06/kinh-doanh-%C4%91%E1%BB%93-%C4%83n-nhanh.jpg">
+                                        <img class="img-thumbnail" src="./images/food2.3.jpg" alt="image error">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="img-thumbnail" src="https://img.taste.com.au/JLWzkN9K/w643-h428-cfill-q90/taste/2017/12/roasted-peach-sour-cream-ice-cream-taste_1980x1320-133837-1.jpg">
+                                        <img class="img-thumbnail" src="./images/food2.4.jpg" alt="image error">
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselFood2" role="button" data-slide="prev">
@@ -270,19 +366,19 @@
                             </div>
                         </div>
                     </div> <!-- row inside-->
-                </div><!-- container-inside -->
+                </div><!-- container-inside 2 -->
             </div>
         </div>
     </div>
-
-
-
+    <br>
+    <br>
     <!-- About us row -->
-    <h1 style="text-align: center;font-size:400%">About us</h1>
-    <div class="container mt-4">
+    <h1 style="text-align: center;font-size:400%;user-select: none;">About us</h1>
+    <br>
+    <div id="aboutUs" class="container">
         <div class="row d-flex justify-content-center">
             <div class="member col-sm-6 col-lg-4">
-                <img class="img-thumbnail" src="https://www.fillmurray.com/560/560">
+                <img class="img-thumbnail" src="https://www.fillmurray.com/560/560" alt="image error">
                 <div class="insideImg pt-3 pl-4">
                     <h2>Team leader</h2>
                     <h3>Name: My</h3>
@@ -290,7 +386,7 @@
                 </div>
             </div>
             <div class="member col-sm-6 col-lg-4">
-                <img class="img-thumbnail" src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.0-9/10984631_378576005662859_1196647309629147808_n.jpg?_nc_cat=110&_nc_sid=174925&_nc_ohc=-oN0Py2PJfAAX8Wp1DC&_nc_ht=scontent.fsgn2-6.fna&oh=1b66d4628e5a134d35e11aa95d1f587d&oe=5F587F06">
+                <img class="img-thumbnail" src="./images/avatar.khoa.jpg" alt="image error">
                 <div class="insideImg pt-3 pl-4 pr-2">
                     <h2>Member</h2>
                     <h3>Name: Khoa</h3>
@@ -298,7 +394,7 @@
                 </div>
             </div>
             <div class="member col-sm-6 col-lg-4">
-                <img class="img-thumbnail" src="https://www.fillmurray.com/560/560">
+                <img class="img-thumbnail" src="https://www.fillmurray.com/560/560" alt="image error">
                 <div class="insideImg pt-3 pl-4">
                     <h2>Member</h2>
                     <h3>Name: Ngoan</h3>
@@ -307,14 +403,16 @@
             </div>
         </div>
     </div>
-
+    <br>
+    <br>
+    <br>
     <!-- Footer row -->
     <footer class="container-fluid" style="background-color: rgb(26, 26, 26);color: white; margin-top: 40px;">
             <div class="row">
-                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="col-12 col-sm-6 offset-lg-1 col-lg-3">
                     <h1>Coppy right</h1>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="col-12 col-sm-6 col-lg-3">
                     <h1>Contact</h1>
                     <br>
                     <p class="icon">
@@ -324,20 +422,21 @@
                         <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
                     </p>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 mt-2 mb-4">
+                <div class="col-12 offset-sm-2 col-sm-8 offset-lg-0 col-lg-4 mt-2 mb-4">
                     <div>
                         <iframe style="border-radius: 15px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.
                         32531626685!2d106.66410831480086!3d10.78637699231475!2m3!1f0!2f0!3f0!3m2!
                         1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2z
                         NTkwIEPDoWNoIE3huqFuZyBUaMOhbmcgVMOhbSwgUGjGsOG7nW5nIDExLCBRdeG6rW4gMywgVG
                         jDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2s!4v1597242887414!5m2!1svi!2s" 
-                        width="450" height="350" frameborder="0" style="border:0;" allowfullscreen="" 
+                        width="100%" height="270px" frameborder="0" style="border:0;" allowfullscreen="" 
                         aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </div>
     </footer>
 
+<script src="./script/script.js" ></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
