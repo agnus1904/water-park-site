@@ -106,10 +106,15 @@ nav{
     color: rgb(255, 255, 255);
 }
 
+.booking-home:hover{
+    box-shadow: 4px 4px 20px rgba(0,0,0,.564);
+}
+
 .booking-home input, 
 .booking-home select,
 .booking-home button{
     box-shadow: 0px 5px 30px rgba(0,0,0,.164);
+    cursor: pointer;
 }
 
 .ticket-price{
@@ -117,8 +122,22 @@ nav{
     box-shadow: 0px 5px 30px rgba(0,0,0,.164);
     background-image: linear-gradient(to left bottom, #4d8be7, #4f93e7, #549be7, #5ca2e5, #65a9e4);background-size: cover;
 }
+
+.ticket-price:hover{
+    box-shadow: 4px 4px 20px rgba(0,0,0,.564);
+}
+
 .ticket-price-form{
     padding-top: 30px;
+}
+
+.ticket-price-form:hover{
+    
+}
+
+.tic-inside:hover{
+    box-shadow: 4px 4px 20px rgba(0,0,0,.464) !important;
+    cursor: pointer;
 }
 
 .custom-input input{
@@ -192,6 +211,7 @@ nav{
 .member:hover img{
     filter: blur(4px);
     opacity: 0.5;
+    
 }
 
 
@@ -201,6 +221,7 @@ nav{
 	top: -27px;
 	left: 40px;
     transition: .4s;
+    cursor: pointer;
 }
 
 .icon .fab{
