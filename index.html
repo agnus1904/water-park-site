@@ -13,6 +13,14 @@
     <a href="#" class="to-top">
         <i class="fas fa-chevron-up"></i>
     </a>
+    <input type="checkbox" name="" id="tog">
+    <label style="margin-top: 100px;" for="tog"><i class="fas fa-chevron-right"></i></label>
+    <div id="contact-icon" class="d-flex flex-column">
+        <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+        <a href="#"><i class="fab fa-facebook-messenger fa-3x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
+    </div>
 
 
     <!-- Navbar row-->
@@ -43,7 +51,7 @@
                         <a href="#aboutUs" class="nav-link">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a href="guide.html" class="nav-link">Guide maps</a>
@@ -53,6 +61,7 @@
         </nav>
     </section>
     <br>
+
     <div class="container-fluid" style="height: 100px;">
 
     </div>
@@ -63,13 +72,14 @@
     <div class="container parkname">
         <div class="row">
             <div class="col-12 text-center">
-                <h1>Sanjalika Water Park</h1>
+                <h1 style="user-select: none;">Sanjalika Water Park</h1>
             </div>
         </div>
     </div>
     <br>
-
     
+    <!-- view and booking-->
+
     <div class="container mt-4">
         
         <div class="row">
@@ -86,16 +96,16 @@
                         <img src="./images/view1.png" alt="image error">
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/view1.png" alt="image error">
+                        <img src="./images/view2.jpg" alt="image error">
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/view1.png" alt="image error">
+                        <img src="./images/view3.jpeg" alt="image error">
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/view1.png" alt="image error">
+                        <img src="./images/view4.jpg" alt="image error">
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/view1.png" alt="image error">
+                        <img src="./images/view5.jpg" alt="image error">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselView" role="button" data-slide="prev">
@@ -106,7 +116,7 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only" >Next</span>
                 </a>
-            </div>
+            </div> <!--carousel view-->
         </div>
         <br  id="booking" >
         <br>
@@ -122,7 +132,7 @@
                         value="2020-08-12"
                         min="2020-08-12" max="2030-12-31">
                 </div>
-            </div>
+            </div> <!--Date-->
             <div class="offset-1 col-5 offset-lg-0  col-lg-2 d-flex pl-2 pl-lg-0 booknum">
                 <div class="mr-2 mr-sm-4" style="width:100px;">
                     <label for="adultNum">Aduilts</label>
@@ -132,29 +142,83 @@
                     <label for="childNum">Children</label>
                     <input type="number" id="childNum" min="0" value="0" class="form-control">
                 </div>
-            </div>
+            </div> <!--People number-->
             <div class="col-6 col-lg-3 mt-2 mt-lg-0 pl-4 pl-lg-0">
                 <label for="cars">Choose Hotel</label>
                     <br>
                     <select class="form-control" name="cars" id="cars">
-                        <option value="hotel1">Hotel 1 5 stars</option>
-                        <option value="hotel2">Hotel 2 4 stars</option>
-                        <option value="hotel3">Hotel 3 4 stars</option>
-                        <option value="hotel4">Hotel 4 3 stars</option>
+                        <option value="hotel1" selected>Hotel 1 5 stars 30$</option>
+                        <option value="hotel2">Hotel 2 4 stars 25$</option>
+                        <option value="hotel3">Hotel 3 4 stars 22$</option>
+                        <option value="hotel4">Hotel 4 3 stars 17$</option>
                     </select>
-            </div>
+            </div> <!--hotel -->
             <div class="offset-1 offset-sm-1 offset-lg-0 col-5 col-sm-4 col-md-3 col-lg-2 mt-2 mt-lg-0">
                 <label for="checkprice">Take a look</label>
                 <button class="btn btn-primary" id="checkprice" type="submit">Check price</button>
+            </div> <!--check price button-->
+        </div>
+        <div class="row  booking-form mt-2" id="form-booking">
+            <div class="offset-1 col-5" style="padding: 10px 0">
+                <div class="price-booking">
+                    <h3>
+                        Default ticket
+                    </h3>
+                    <div id="default">
+
+                    </div>
+                </div>
+                <div class="price-booking">
+                    <h3>
+                        Silver ticket
+                    </h3>
+                    <div id="silver">
+
+                    </div>
+                </div>
+                <div class="price-booking">
+                    <h3>
+                        Gold ticket
+                    </h3>
+                    <div id="gold">
+
+                    </div>
+                </div>
+                <div class="price-booking">
+                    <h3>
+                        Full combo
+                    </h3>
+                    <div id="fullcombo">
+
+                    </div>
+                </div>
+            </div>
+            <div class="offset-1 col-4" style="background-color: rgb(217, 228, 250);">
+                <form action="" class="form1" onsubmit="booking()">
+                    <h2>Booking form</h2>
+                    <div class="input-group">
+                        <input type="text" id="fullname" required>
+                        <label for="fullname">Full name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="phone" required>
+                        <label for="phone">Phone(+84)</label>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
         <br>
-        <br>
-
         <!-- Price ticket-->
         <div class="row text-center ticket-price" style="width: fit-content;margin: 0 auto;">
 
-            <div class="offset-1 col-10 col-lg-4 ticket-price-form" 
+            <div class="offset-1 col-10 col-lg-5 ticket-price-form" 
             style="height: 550px;border-radius:20px 0 0 0;">
                 <h1>Default ticket</h1>
                 <br>
@@ -171,7 +235,7 @@
                 <h3><i class="fas fa-times"></i>&nbsp;asbdsc</h3>
                 <h3><i class="fas fa-times"></i>&nbsp;asbdsc</h3>
             </div>
-            <div class="offset-1 col-10 col-lg-4 ticket-price-form" 
+            <div class="offset-1 offset-lg-0 col-10 col-lg-5 ticket-price-form""
             style="height: 550px;border-radius:0 20px 0 0;">
                 <h1>Silver ticket</h1>
                 <br>
@@ -188,7 +252,7 @@
                 <h3><i class="fas fa-times"></i>&nbsp;asbdsc</h3>
                 <h3><i class="fas fa-times"></i>&nbsp;asbdsc</h3>
             </div>
-            <div class="offset-1 col-10 col-lg-4 ticket-price-form" 
+            <div class="offset-1 col-10 col-lg-5 ticket-price-form" 
             style="height: 550px;border-radius:0 0 0 20px;">
                 <h1>Gold ticket</h1>
                 <br>
@@ -205,7 +269,7 @@
                 <h3><i class="fas fa-check"></i>&nbsp;asbdsc</h3>
                 <h3><i class="fas fa-times"></i>&nbsp;asbdsc</h3>
             </div>
-            <div class="offset-1 col-10 col-lg-4 ticket-price-form" 
+            <div class="offset-1 offset-lg-0 col-10 col-lg-5 ticket-price-form" 
             style="height: 550px;border-radius:0 0 20px 0;">
                 <h1>Full combo</h1>
                 <br>
@@ -232,39 +296,41 @@
     <!-- Game Row -->
     <h1 style="text-align: center;font-size: 450%; user-select: none;">
         Games</h1>
-    <div class="container mt-4">
-        <div class="row">
+    <div style="width: 97%;background-color: rgb(217, 228, 250);margin: 0 auto;color: lightslategrey;
+    padding: 6rem 0; border-radius: 1.3rem;">
+        <br>
+        <br>
+    <div class="container">
+        <div class="row" >
             <div class="games col-sm-12 col-lg-6 mb-4 d-flex flex-column align-items-center">
                 <img class="img-thumbnail imgs1" 
                 src="./images/game1.jpg!d" alt="image error">
                 <br>
-                <a href="#" class="text-light"><h2>Swimming</h2></a>
+                <a href="#"><h2>Swimming</h2></a>
             </div>
             <div class="games col-sm-12 col-lg-6 mb-4 d-flex flex-column align-items-center">
                 <img class="img-thumbnail imgs2" 
                 src="./images/game2.jpg" alt="image error">
                 <br>
-                <a href="#" class="text-light"><h2>Adventure game</h2></a>
+                <a href="#"><h2>Adventure game</h2></a>
             </div>
             <div class="games col-sm-12 col-lg-6 mb-4 d-flex flex-column align-items-center">
                 <img class="img-thumbnail imgs3" 
                 src="./images/game3.jpg" alt="image error">
                 <br>
-                <a href="#" class="text-light"><h2>Children's play area</h2></a>
+                <a href="#" ><h2>Children's play area</h2></a>
             </div>
             <div class="games col-sm-12 col-lg-6 mb-4 d-flex flex-column align-items-center">
                 <img class="img-thumbnail imgs4" 
                 src="./images/game4.webp" alt="image error">
                 <br>
-                <a href="#" class="text-light"><h2>Aquarium</h2></a>
+                <a href="#"><h2>Aquarium</h2></a>
             </div>
         </div>
     </div>
-    
+    </div>
 
     <br>
-    <br>
-    <hr class="mt-4" style="border: 3px solid #bcd8d2;width: 35%;">
     <br>
     <br>
     <br>
@@ -273,163 +339,199 @@
     <h1 style="text-align:center; font-size: 550%;color: #e2e6e5; user-select: none;">
         Foods</h1>
     <br>
-
-    <div id="foodrow" class="container mb-4">
-        <div class="row foods">
-            <div class="col-12">
-                <div class="container">
-                    <div class="row d-flex flex-column-reverse flex-lg-row">
-                        <div class="col-12 col-lg-8">
-                            <div id="carouselFood1" class="carousel slide " data-ride> <!--carousel food 2-->
-                                <ul class="carousel-indicators">
-                                    <li data-target="#carouselFood1" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carouselFood1" data-slide-to="1"></li>
-                                    <li data-target="#carouselFood1" data-slide-to="2"></li>		
-                                    <li data-target="#carouselFood1" data-slide-to="3"></li>
-                                    <li data-target="#carouselFood1" data-slide-to="4"></li>
-                                </ul>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img class="img-thumbnail" src="./images/food1.1.jpg" alt="image error">
+    <br>
+    <div style="width: 97%;background-color: rgb(217, 228, 250);margin: 0 auto;color: lightslategrey;
+    padding: 8rem 0; border-radius: 1.3rem;">
+        <div id="foodrow" class="container">
+            <div class="row foods">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row d-flex flex-column-reverse flex-lg-row">
+                            <div class="col-12 col-lg-8">
+                                <div id="carouselFood1" class="carousel slide " data-ride> <!--carousel food 2-->
+                                    <ul class="carousel-indicators">
+                                        <li data-target="#carouselFood1" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselFood1" data-slide-to="1"></li>
+                                        <li data-target="#carouselFood1" data-slide-to="2"></li>		
+                                        <li data-target="#carouselFood1" data-slide-to="3"></li>
+                                        <li data-target="#carouselFood1" data-slide-to="4"></li>
+                                    </ul>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="img-thumbnail" src="./images/food1.1.jpg" alt="image error">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-thumbnail" src="./images/food1.2.png" alt="image error">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-thumbnail" src="./images/food1.3.jpg" alt="image error">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-thumbnail" src="./images/food1.4.jpg" alt="image error">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-thumbnail" src="./images/food1.5.jpg" alt="image error">
+                                        </div>
                                     </div>
-                                    <div class="carousel-item">
-                                        <img class="img-thumbnail" src="./images/food1.2.png" alt="image error">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="img-thumbnail" src="./images/food1.3.jpg" alt="image error">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="img-thumbnail" src="./images/food1.4.jpg" alt="image error">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="img-thumbnail" src="./images/food1.5.jpg" alt="image error">
-                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselFood1" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselFood1" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
                                 </div>
-                                <a class="carousel-control-prev" href="#carouselFood1" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselFood1" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
                             </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                            <div class="mt-lg-4 text-center">
-                                <h2>Luxury when eating in 4-5 star restaurants</h2>
-                            </div>
-                        </div>
-                    </div> <!-- row indise-->
-                </div> <!-- container-inside 1 -->
-            </div>
-            <div class="col-12">
-                <br>
-                <br>
-                <div class="container">
-                    <div class="row d-flex flex-column flex-lg-row">
-                        <div class="col-12 col-lg-4">
-                            <div class="mt-lg-4 text-center">
-                                <h2>Walking and eat fast foods around the park</h2>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-8">
-                            <div id="carouselFood2" class="carousel slide " data-ride> <!--carousel food 2--> 
-                                <ul class="carousel-indicators">
-                                    <li data-target="#carouselFood2" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carouselFood2" data-slide-to="1"></li>
-                                    <li data-target="#carouselFood2" data-slide-to="2"></li>		
-                                    <li data-target="#carouselFood2" data-slide-to="3"></li>
-                                </ul>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img class="img-thumbnail" src="./images/food2.1.jpg" alt="image error">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="img-thumbnail" src="./images/food2.2.jpg" alt="image error">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="img-thumbnail" src="./images/food2.3.jpg" alt="image error">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="img-thumbnail" src="./images/food2.4.jpg" alt="image error">
-                                    </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="mt-lg-4 text-center">
+                                    <h2>Luxury when eating in 4-5 star restaurants</h2>
                                 </div>
-                                <a class="carousel-control-prev" href="#carouselFood2" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselFood2" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
                             </div>
-                        </div>
-                    </div> <!-- row inside-->
-                </div><!-- container-inside 2 -->
+                        </div> <!-- row indise-->
+                    </div> <!-- container-inside 1 -->
+                </div>
+                <div class="col-12">
+                    <br>
+                    <br>
+                    <div class="container">
+                        <div class="row d-flex flex-column flex-lg-row">
+                            <div class="col-12 col-lg-4">
+                                <div class="mt-lg-4 text-center">
+                                    <h2>Walking and eat fast foods around the park</h2>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <div id="carouselFood2" class="carousel slide " data-ride> <!--carousel food 2--> 
+                                    <ul class="carousel-indicators">
+                                        <li data-target="#carouselFood2" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselFood2" data-slide-to="1"></li>
+                                        <li data-target="#carouselFood2" data-slide-to="2"></li>		
+                                        <li data-target="#carouselFood2" data-slide-to="3"></li>
+                                    </ul>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="img-thumbnail" src="./images/food2.1.jpg" alt="image error">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-thumbnail" src="./images/food2.2.jpg" alt="image error">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-thumbnail" src="./images/food2.3.jpg" alt="image error">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-thumbnail" src="./images/food2.4.jpg" alt="image error">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselFood2" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselFood2" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> <!-- row inside-->
+                    </div><!-- container-inside 2 -->
+                </div>
             </div>
         </div>
     </div>
+
+    <br>
     <br>
     <br>
     <!-- About us row -->
     <h1 style="text-align: center;font-size:400%;user-select: none;">About us</h1>
     <br>
-    <div id="aboutUs" class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="member col-sm-6 col-lg-4">
-                <img class="img-thumbnail" src="https://www.fillmurray.com/560/560" alt="image error">
-                <div class="insideImg pt-3 pl-4">
-                    <h2>Team leader</h2>
-                    <h3>Name: My</h3>
-                    <h3>zvvzxcvxzcvxcvxcv</h3>
+    <br>
+    <div style="width: 97%;background-color: rgb(217, 228, 250);margin: 0 auto;
+    padding: 5rem 0 ; border-radius: 1.3rem;">
+        <div id="aboutUs" class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="member col-sm-6 col-lg-4">
+                    <img class="img-thumbnail" src="https://www.fillmurray.com/560/560" alt="image error">
+                    <div class="insideImg pt-3 pl-4 d-flex flex-column">
+                        <div style="flex-grow: 1;">
+                            <h2>Leader</h2>
+                            <span>Name: My
+                            zxcv zvsdfa zcvvsd</span>
+                        </div>
+                        <div style="text-align: center;" class="icon-bar">
+                            <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-facebook-messenger fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="member col-sm-6 col-lg-4">
-                <img class="img-thumbnail" src="./images/avatar.khoa.jpg" alt="image error">
-                <div class="insideImg pt-3 pl-4 pr-2">
-                    <h2>Member</h2>
-                    <h3>Name: Khoa</h3>
-                    <h3>MERN stack developer with 0 year of experience</h3>
+                <div class="member col-sm-6 col-lg-4" >
+                    <img class="img-thumbnail" src="./images/avatar.khoa.jpg" alt="image error">
+                    <div class="insideImg pt-3 pl-4 pr-2 d-flex flex-column">
+                        <div style="flex-grow: 1;">
+                            <h2>Member</h2>
+                            <span>Name: Khoa
+                            MERN stack developer with 0 year of experience</span>
+                        </div>
+                        <div style="text-align: center;" class="icon-bar">
+                            <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-facebook-messenger fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="member col-sm-6 col-lg-4">
-                <img class="img-thumbnail" src="https://www.fillmurray.com/560/560" alt="image error">
-                <div class="insideImg pt-3 pl-4">
-                    <h2>Member</h2>
-                    <h3>Name: Ngoan</h3>
-                    <h3>zvvzxcvxzcvxcvxcv</h3>
+                <div class="member col-sm-6 col-lg-4">
+                    <img class="img-thumbnail" src="https://www.fillmurray.com/560/560" alt="image error">
+                    <div class="insideImg pt-3 pl-4 d-flex flex-column">
+                        <div style="flex-grow: 1;">
+                            <h2>Member</h2>
+                            <span>Name: Ngoan
+                            zcxv zvcv vcvzxc</span>
+                        </div>
+                        <div style="text-align: center;" class="icon-bar">
+                            <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-facebook-messenger fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
     <!-- Footer row -->
-    <footer class="container-fluid" style="background-color: rgb(26, 26, 26);color: white; margin-top: 40px;">
+    <footer id="contact" class="container-fluid" style="background-color: rgb(26, 26, 26);color: white; margin-top: 40px;
+    padding:2rem 0;">
             <div class="row">
-                <div class="col-12 col-sm-6 offset-lg-1 col-lg-3">
-                    <h1>Coppy right</h1>
+                <div class="col-12 offset-sm-2 col-sm-8 offset-lg-1 col-lg-5">
+                    <h2>Contact</h2>
+                    <span>
+                        Address: 590 Cach Mang Thang 8 - District 3 - HCM city.
+                        <br>
+                        Tel: (+84)708619547.
+                        <br>
+                        Email: agnus1904@gmail.com.
+                    </span>
+                    <h2>Feedback</h2>
+                    <form action="" onsubmit="feedBack()">
+                        <div class="d-flex mb-2">
+                            <input id="email-feedback" class="form-control mr-2" type="email" placeholder="Input your Email" required>
+                            <button type="submit" class="btn btn-primary"> Send</button>
+                        </div>
+                        <div>
+                            <textarea id="text-feedback" class="form-control" id="text-feed-back" name="" rows="4" cols="50" required></textarea>
+                        </div>
+                        
+                    </form>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <h1>Contact</h1>
-                    <br>
-                    <p class="icon">
-                        <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
-                        <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
-                        <a href="#"><i class="fab fa-facebook-messenger fa-3x"></i></a>
-                        <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
-                    </p>
-                </div>
-                <div class="col-12 offset-sm-2 col-sm-8 offset-lg-0 col-lg-4 mt-2 mb-4">
+                <div class="col-12 offset-sm-2 col-sm-8 offset-lg-0 col-lg-5">
                     <div>
                         <iframe style="border-radius: 15px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.
                         32531626685!2d106.66410831480086!3d10.78637699231475!2m3!1f0!2f0!3f0!3m2!
                         1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2z
                         NTkwIEPDoWNoIE3huqFuZyBUaMOhbmcgVMOhbSwgUGjGsOG7nW5nIDExLCBRdeG6rW4gMywgVG
                         jDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2s!4v1597242887414!5m2!1svi!2s" 
-                        width="100%" height="270px" frameborder="0" style="border:0;" allowfullscreen="" 
+                        width="100%" height="320px" frameborder="0" style="border:0;" allowfullscreen="" 
                         aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
