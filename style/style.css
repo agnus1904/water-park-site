@@ -74,10 +74,6 @@ nav{
     font-weight: 500;
 }
 
-.nav-link{
-    user-select: none;
-}
-
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -364,7 +360,7 @@ nav{
     font-size: 160%;
 }
 .icon-bar{
-    font-size: 2rem ;
+    font-size: 1.5rem ;
 }
 
 
